@@ -1,58 +1,94 @@
+body, h1, h2, p, ul, li, img, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #d1d7dd;
+  line-height: 1.6;
+  background-color: #f4f4f4;
   color: #333;
-  font-size: 16px;
-  line-height: 1.5;
-}
-h1, h2, h3 {
-  color: #8a9098;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  line-height: 1.2;
 }
 
-a {
-  color: #007bff;
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 1em;
+}
+
+header nav ul li a {
+  color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #0056b3;
-}
-
-.profile-image {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
-.card {
-  background-color: white;
-  box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
-  text-align: center;
-  padding: 20px;
-  margin: 20px 0;
-}
-
-.list-inline {
-  padding: 0;
-}
-
-.list-inline li {
-  display: inline;
-}
-
-.btn-blue {
-  background-color: lightblue;
-  color: white;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  font-size: 1.2em;
 }
 
 .container {
-  width: 700px;
-  margin: 0 auto;
+  width: 80%;
+  margin: 2em auto;
+}
+
+.card {
+  background: #fff;
+  padding: 2em;
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-image {
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 1em 0;
+}
+
+.btn-blue {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  color: #fff;
+  background-color: #007BFF;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
+
+.social-links li {
+  margin: 0 0.5em;
+}
+
+.social-links a {
+  font-size: 2em;
+  color: #333;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #333;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
